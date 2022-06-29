@@ -1,0 +1,211 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,200&display=swap");
+html {
+  font-size: 62.5%; }
+
+body {
+  background-image: url(../img/perritosfondo.jpg);
+  background-attachment: fixed;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  /*hacemos que todo el body contenga la misma fuente*/ }
+
+.navcolor {
+  background-color: #d38fbc; }
+
+.menuNav {
+  background-color: #d38fbc;
+  color: #161515;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  font-size: 2rem;
+  display: flex;
+  align-items: center; }
+
+.crearLista {
+  display: inline-block;
+  /*elemento de línea */ }
+
+.lista {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px; }
+
+nav ul li a {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: #250118;
+  align-items: center;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size .4s; }
+  nav ul li a:hover {
+    color: #161515;
+    background-size: 100% 2px; }
+
+p {
+  font-size: 2rem;
+  /*a partir de acá se modifican los tamaños de los textos*/
+  background-color: rgba(255, 255, 255, 0.726); }
+
+h1 {
+  font-size: 5rem;
+  background-color: rgba(255, 209, 251, 0.726);
+  text-align: center; }
+
+h2, h3, h4 {
+  background-color: rgba(255, 255, 255, 0.726); }
+
+h2 {
+  font-size: 4rem; }
+
+h3 {
+  font-size: 3rem; }
+
+h4 {
+  font-size: 2rem; }
+
+.logo {
+  /*modificamos el tamaño del logo*/
+  width: 60px;
+  height: 60px;
+  padding: 10px; }
+
+.filtros {
+  background-color: rgba(255, 209, 251, 0.726);
+  color: #676565;
+  padding: 10px 30px;
+  font-size: 1.5rem;
+  line-height: 1.6em;
+  align-items: center; }
+
+.piePagina {
+  text-align: center;
+  background-color: #d38fbc;
+  bottom: 0px;
+  width: 100%; }
+
+.tituloFooter {
+  text-align: center;
+  background-color: #d38fbc;
+  display: inline; }
+
+.formulario {
+  font-size: 1.5rem;
+  background-color: rgba(255, 206, 245, 0.726);
+  color: #161515; }
+
+.chapitaForm {
+  /*le cambiamos las propiedades para que esté acorde al form ya que sin eso le quedan las propiedades del parrafo */
+  font-size: 1.5rem;
+  background-color: rgba(255, 206, 245, 0);
+  color: #161515; }
+
+.perro {
+  width: 100%;
+  height: 80%; }
+
+.equipo {
+  /*centramos la imagen*/
+  display: block;
+  margin: 0px auto; }
+
+.opinion {
+  /*encuadramos la opinion dentro de una box*/
+  background-color: #d38fbc;
+  width: 300px;
+  border: 5px solid #250118;
+  padding: 50px;
+  margin: 20px; }
+
+.imagenIndex {
+  background-color: rgba(255, 209, 251, 0.726);
+  display: block;
+  margin: 0px auto;
+  width: 60px;
+  height: 60px; }
+
+#res {
+  display: flex; }
+
+.opinion {
+  flex-wrap: nowrap; }
+
+.contenedor {
+  /*creamos al grid padre*/
+  display: grid;
+  grid-template-columns: 1fr;
+  /*establecer filas*/
+  grid-template-rows: 10vh, 5vh, 65vh, 15vh, 5vh;
+  /*establecer columnas*/
+  grid-template-areas: "nav"  "header"  "main" "aside" "footer"; }
+
+.menuNav {
+  grid-area: nav; }
+
+.main {
+  grid-area: main; }
+
+#aside {
+  grid-area: aside; }
+
+.header {
+  grid-area: header; }
+
+.piePagina {
+  grid-area: footer; }
+
+.h1:hover {
+  transform: scaleX(1.2);
+  cursor: pointer;
+  transition: 3s; }
+
+.hpcarousel {
+  background-color: rgba(0, 0, 0, 0.363); }
+
+.card {
+  text-align: center;
+  background-color: transparent; }
+
+.cardbg {
+  background-color: transparent;
+  border-color: transparent; }
+
+.card-block {
+  background-color: #ec8fca21;
+  text-align: center;
+  border-color: #250118; }
+
+.btn {
+  background: linear-gradient(to top, #a8308a, #5a1f3f);
+  border-color: transparent; }
+
+.btn:hover {
+  background: linear-gradient(to top, #5a1f3f, #a8308a);
+  transition: 3s;
+  cursor: pointer;
+  color: pink; }
+
+.card-title {
+  background-color: transparent;
+  text-align: center;
+  font-weight: bold; }
+
+.card-text {
+  background-color: transparent;
+  text-align: center; }
+
+@media only screen and (min-width: 768px) {
+  .contenedor {
+    grid-template-columns: 15vw 85vw;
+    grid-template-rows: 4, auto;
+    grid-template-areas: "nav nav" "header header" "aside main" "footer footer"; } }
+
+@media (min-width: 1024px) {
+  .contenedor {
+    grid-template-columns: 15vw 85vw;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "nav nav"  "header header"  "aside main"  "footer footer"; } }

@@ -1,274 +1,211 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,200&display=swap');
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,200&display=swap");
+html {
+  font-size: 62.5%; }
 
-html{
-	font-size: 62.5%;
-}
+body {
+  background-image: url(../img/perritosfondo.jpg);
+  background-attachment: fixed;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  /*hacemos que todo el body contenga la misma fuente*/ }
 
-body{
-    background-image: url(../img/perritosfondo.jpg);
-    background-attachment: fixed;
-	overflow-x: hidden;
-    font-family: 'Poppins', sans-serif; /*hacemos que todo el body contenga la misma fuente*/
-}
+.navcolor {
+  background-color: #d38fbc; }
 
+.menuNav {
+  background-color: #d38fbc;
+  color: #161515;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  font-size: 2rem;
+  display: flex;
+  align-items: center; }
 
-.navcolor{
-    background-color: rgb(211, 143, 188);
-}
+.crearLista {
+  display: inline-block;
+  /*elemento de línea */ }
 
-.menuNav{
-    background-color: rgb(211, 143, 188);
-    color:rgb(0, 0, 0);
-    position: sticky;
-    top: 0; 
-	width: 100%; 
-    font-size: 2rem;
-    display: flex;
-    align-items: center;
-}
+.lista {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px; }
 
+nav ul li a {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: #250118;
+  align-items: center;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size .4s; }
+  nav ul li a:hover {
+    color: #161515;
+    background-size: 100% 2px; }
 
-.crearLista{
-    display: inline-block;  /*elemento de línea */
-}
+p {
+  font-size: 2rem;
+  /*a partir de acá se modifican los tamaños de los textos*/
+  background-color: rgba(255, 255, 255, 0.726); }
 
+h1 {
+  font-size: 5rem;
+  background-color: rgba(255, 209, 251, 0.726);
+  text-align: center; }
 
+h2, h3, h4 {
+  background-color: rgba(255, 255, 255, 0.726); }
 
-.lista{
-    list-style: none;
-    display: inline-block; 
-    margin: 0 20px;
-    
-}
+h2 {
+  font-size: 4rem; }
 
-    nav ul li a{
-        font-size: 1.8rem;
-        text-decoration: none;
-        color: #250118;
-        align-items: center;
-        background-image: linear-gradient(currentColor, currentColor);
-        background-position: 0% 100%;
-        background-repeat: no-repeat;
-        background-size: 0% 2px;
-        transition: background-size .4s;
-    }
+h3 {
+  font-size: 3rem; }
 
-    nav ul li a:hover{ /*cuando el cursor este sobre la opción del nav*/
-        font-weight: 600;
-        color: black;
-        background-size: 100% 2px;
-    }
+h4 {
+  font-size: 2rem; }
 
+.logo {
+  /*modificamos el tamaño del logo*/
+  width: 60px;
+  height: 60px;
+  padding: 10px; }
 
-p{
-    font-size: 1.8rem; /*a partir de acá se modifican los tamaños de los textos*/
-    background-color: rgba(255, 255, 255, 0.726);
-}
+.filtros {
+  background-color: rgba(255, 255, 255, 0.726);
+  color: #676565;
+  padding: 10px 30px;
+  font-size: 1.5rem;
+  line-height: 1.6em;
+  align-items: center; }
 
-h1{
-    font-size: 5rem;
-    background-color: rgba(255, 209, 251, 0.726);
-    text-align: center;
-}
+.piePagina {
+  text-align: center;
+  background-color: #d38fbc;
+  bottom: 0px;
+  width: 100%; }
 
-h2, h3, h4{
-    background-color: rgba(255, 255, 255, 0.726);
-}
+.tituloFooter {
+  text-align: center;
+  background-color: #d38fbc;
+  display: inline; }
 
-h2{
-    font-size: 4rem;
-}
+.formulario {
+  font-size: 1.5rem;
+  background-color: rgba(255, 206, 245, 0.726);
+  color: #161515; }
 
-h3{
-    font-size: 3rem;
-}
-h4{
-    font-size: 2rem;
-}
+.chapitaForm {
+  /*le cambiamos las propiedades para que esté acorde al form ya que sin eso le quedan las propiedades del parrafo */
+  font-size: 1.5rem;
+  background-color: rgba(255, 206, 245, 0);
+  color: #161515; }
 
-.logo{ /*modificamos el tamaño del logo*/
-    width: 60px;
-    height: 60px;
-    padding: 10px;
-}
+.perro {
+  width: 100%;
+  height: 80%; }
 
-.filtros{
-	background-color: rgba(255, 255, 255, 0.596);
-	color:#676565 ;
-	padding: 10px 30px;
-	font-size: 1.3rem;
-	line-height: 1.6em;
-	/*display: flex;
-	flex-direction: column;*/
-	align-items: center;
-}
+.equipo {
+  /*centramos la imagen*/
+  display: block;
+  margin: 0px auto; }
 
+.opinion {
+  /*encuadramos la opinion dentro de una box*/
+  background-color: #d38fbc;
+  width: 300px;
+  border: 5px solid #250118;
+  padding: 50px;
+  margin: 20px; }
 
-.piePagina{
-    text-align: center;
-    background-color: rgb(211, 143, 188);
-    bottom:0px;
-    width: 100%;
+.imagenIndex {
+  background-color: rgba(255, 209, 251, 0.726);
+  display: block;
+  margin: 0px auto;
+  width: 60px;
+  height: 60px; }
 
-}
-.tituloFooter{
-    text-align: center;
-    background-color: rgb(211, 143, 188);
-    display: inline;
-}
+#res {
+  display: flex; }
 
-.formulario{
-    font-size: 1.5rem;
-    background-color: rgba(255, 206, 245, 0.726);
-    color: #44012c;
-}
+.opinion {
+  flex-wrap: nowrap; }
 
-.chapitaForm{ /*le cambiamos las propiedades para que esté acorde al form ya que sin eso le quedan las propiedades del parrafo */
-    font-size: 1.5rem;
-    background-color: rgba(255, 206, 245, 0);
-    color: #44012c;
-}
+.contenedor {
+  /*creamos al grid padre*/
+  display: grid;
+  grid-template-columns: 1fr;
+  /*establecer filas*/
+  grid-template-rows: 10vh, 5vh, 65vh, 15vh, 5vh;
+  /*establecer columnas*/
+  grid-template-areas: "nav"  "header"  "main" "aside" "footer"; }
 
-.perro{
-    width: 100%; 
-    height: 80%;
-}
+.menuNav {
+  grid-area: nav; }
 
-.equipo{ /*centramos la imagen*/
-    display: block;
-    margin: 0px auto;
-}
+.main {
+  grid-area: main; }
 
-.tabla{  /*centramos la tabla*/
-    width: 50%;
-    height: 25%;
-    margin: 0px auto;
-}
+#aside {
+  grid-area: aside; }
 
-.opinion{ /*encuadramos la opinion dentro de una box*/
-    background-color: rgb(243, 169, 237);
-    width: 300px;
-    border: 5px solid rgb(128, 0, 128);
-    padding: 50px;
-    margin: 20px;
-}
+.header {
+  grid-area: header; }
 
-.imagenIndex{
-    background-color: rgba(255, 255, 255, 0.726);
-    display: block;
-    margin: 0px auto;
-    width: 60px;
-    height: 60px;
-}
+.piePagina {
+  grid-area: footer; }
 
-#res{
-    display: flex;
-}
+.h1:hover {
+  transform: scaleX(1.2);
+  cursor: pointer;
+  transition: 3s; }
 
-.opinion{
-    flex-wrap: nowrap;
-}
+.hpcarousel {
+  background-color: rgba(0, 0, 0, 0.363); }
 
-.contenedor{ /*creamos al grid padre*/
-    display: grid;
-	grid-template-columns: 1fr; /*establecer filas*/
-	grid-template-rows: 10vh, 5vh, 65vh, 15vh, 5vh; /*establecer columnas*/
-	grid-template-areas: 
-	"nav" 
-	"header" 
-    "main"
-    "aside"
-	"footer";
-}
+.card {
+  text-align: center;
+  background-color: transparent; }
 
-.menuNav{
-    grid-area: nav;
-}
+.cardbg {
+  background-color: transparent;
+  border-color: transparent; }
 
-.main{
-    grid-area: main;
-}
-#aside{
-    grid-area: aside;
-}
+.card-block {
+  background-color: #ec8fca21;
+  text-align: center;
+  border-color: #250118; }
 
-.header{
-    grid-area: header;
-}
+.btn {
+  background: linear-gradient(to top, #a8308a, #5a1f3f);
+  border-color: transparent; }
 
-.piePagina{
-    grid-area: footer;
-}
+.btn:hover {
+  background: linear-gradient(to top, #5a1f3f, #a8308a);
+  transition: 3s;
+  cursor: pointer;
+  color: pink; }
 
-.h1:hover{
-    transform: scaleX(1.2);
-	cursor: pointer;
-	transition: 3s;
-}
+.card-title {
+  background-color: transparent;
+  text-align: center;
+  font-weight: bold; }
 
-.hpcarousel{
-    background-color: rgba(0, 0, 0, 0.363);
-}
+.card-text {
+  background-color: transparent;
+  text-align: center; }
 
-.card{
-    text-align: center;
-    background-color: transparent;
-}
+@media only screen and (min-width: 768px) {
+  .contenedor {
+    grid-template-columns: 15vw 85vw;
+    grid-template-rows: 4, auto;
+    grid-template-areas: "nav nav" "header header" "aside main" "footer footer"; } }
 
-.cardbg{
-    background-color: transparent;
-    border-color: transparent;
-}
-.card-block{
-    background-color: #ec8fca21;
-    text-align: center;
-    border-color: #250118;
-}
-.btn{
-    background: linear-gradient(to top,rgb(168, 48, 138) , rgb(90, 31, 63));
-    border-color: transparent;
-}
-.btn:hover{
-    background: linear-gradient(to top, rgb(90, 31, 63), rgb(168, 48, 138));
-	transition: 3s;
-	cursor: pointer;
-    color: pink;
-}
-.card-title{
-    background-color: transparent;
-    text-align: center;
-    font-weight: bold;
-}
-
-.card-text{
-    background-color: transparent;
-    text-align: center;
-}
-
-@media only screen and (min-width:768px){
-    .contenedor{
-         grid-template-columns: 15vw 85vw;
-         grid-template-rows: (4, auto);
-         grid-template-areas: 
-         "nav nav"
-         "header header"
-         "aside main"
-         "footer footer";
-    }
-    
-
-
-}
-
-@media (min-width: 1024px){
-	
-	.contenedor{
-		grid-template-columns: 15vw 85vw;
-		grid-template-rows: repeat(4, auto);
-		grid-template-areas: 
-		"nav nav" 
-		"header header" 
-		"aside main" 
-		"footer footer";
-	}
-}
+@media (min-width: 1024px) {
+  .contenedor {
+    grid-template-columns: 15vw 85vw;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "nav nav"  "header header"  "aside main"  "footer footer"; } }
