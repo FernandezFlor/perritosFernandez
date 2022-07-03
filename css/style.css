@@ -1,5 +1,34 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,200&display=swap");
+.formulario, .chapitaForm {
+  font-size: 1.5rem;
+  background-color: rgba(255, 206, 245, 0.726);
+  color: #161515; }
+
+.btn, .btn:hover {
+  background: linear-gradient(to top, #a8308a, #5a1f3f);
+  border-color: transparent; }
+
+.btn:hover {
+  cursor: pointer;
+  color: #d38fbc; }
+
+h1, .h1:hover {
+  font-size: 5rem;
+  background-color: rgba(255, 209, 251, 0.726);
+  color: #161515;
+  text-align: center; }
+
+.h1:hover {
+  transform: scaleX(1.2);
+  cursor: pointer;
+  transition: 3s; }
+
+h2 {
+  font-size: 4rem;
+  background-color: rgba(255, 255, 255, 0.726);
+  color: #161515; }
+
 html {
   font-size: 62.5%; }
 
@@ -51,16 +80,8 @@ p {
   /*a partir de acá se modifican los tamaños de los textos*/
   background-color: rgba(255, 255, 255, 0.726); }
 
-h1 {
-  font-size: 5rem;
-  background-color: rgba(255, 209, 251, 0.726);
-  text-align: center; }
-
 h2, h3, h4 {
   background-color: rgba(255, 255, 255, 0.726); }
-
-h2 {
-  font-size: 4rem; }
 
 h3 {
   font-size: 3rem; }
@@ -88,20 +109,9 @@ h4 {
   bottom: 0px;
   width: 100%; }
 
-.tituloFooter {
-  text-align: center;
-  background-color: #d38fbc;
-  display: inline; }
-
-.formulario {
+.formulario, .chapitaForm {
   font-size: 1.5rem;
   background-color: rgba(255, 206, 245, 0.726);
-  color: #161515; }
-
-.chapitaForm {
-  /*le cambiamos las propiedades para que esté acorde al form ya que sin eso le quedan las propiedades del parrafo */
-  font-size: 1.5rem;
-  background-color: rgba(255, 206, 245, 0);
   color: #161515; }
 
 .perro {
@@ -158,11 +168,6 @@ h4 {
 .piePagina {
   grid-area: footer; }
 
-.h1:hover {
-  transform: scaleX(1.2);
-  cursor: pointer;
-  transition: 3s; }
-
 .hpcarousel {
   background-color: rgba(0, 0, 0, 0.363); }
 
@@ -178,16 +183,6 @@ h4 {
   background-color: #ec8fca21;
   text-align: center;
   border-color: #250118; }
-
-.btn {
-  background: linear-gradient(to top, #a8308a, #5a1f3f);
-  border-color: transparent; }
-
-.btn:hover {
-  background: linear-gradient(to top, #5a1f3f, #a8308a);
-  transition: 3s;
-  cursor: pointer;
-  color: pink; }
 
 .card-title {
   background-color: transparent;

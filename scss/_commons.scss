@@ -63,18 +63,9 @@ p{
     background-color: $pbackground;
 }
 
-h1{
-    font-size: $fonth1;
-    background-color: $h1background;
-    text-align: center;
-}
 
 h2, h3, h4{
     background-color: $hbackground;
-}
-
-h2{
-    font-size: $fontXL;
 }
 
 h3{
@@ -106,22 +97,11 @@ h4{
     width: 100%;
 }
 
-.tituloFooter{
-    text-align: center;
-    background-color: $primaryColor;
-    display: inline;
-}
 
 .formulario{
     font-size: $formfont;
     background-color: $formcolor;
     color: $black;
-}
-
-.chapitaForm{ /*le cambiamos las propiedades para que esté acorde al form ya que sin eso le quedan las propiedades del parrafo */
-    font-size: $formfont;
-    background-color: $transparent;
-    color:$black;
 }
 
 .perro{
@@ -189,11 +169,7 @@ h4{
     grid-area: footer;
 }
 
-.h1:hover{
-    transform: scaleX(1.2);
-	cursor: pointer;
-	transition: 3s;
-}
+
 
 .hpcarousel{
     background-color: rgba(0, 0, 0, 0.363);
@@ -213,16 +189,7 @@ h4{
     text-align: center;
     border-color: #250118;
 }
-.btn{
-    background: linear-gradient(to top,rgb(168, 48, 138) , rgb(90, 31, 63));
-    border-color: transparent;
-}
-.btn:hover{
-    background: linear-gradient(to top, rgb(90, 31, 63), rgb(168, 48, 138));
-	transition: 3s;
-	cursor: pointer;
-    color: pink;
-}
+
 .card-title{
     background-color: transparent;
     text-align: center;
