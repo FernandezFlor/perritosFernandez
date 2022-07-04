@@ -1,0 +1,50 @@
+$paleta:( //maps
+    'uno': rgb(211, 143, 188), //nav
+    'dos': rgba(255, 255, 255, 0.726), //pbackground
+    'tres':rgba(255, 209, 251, 0.726), //h1background
+    'cuatro':rgba(255, 255, 255, 0.726), //hbackground
+    'cinco': rgba(255, 206, 245, 0.726), //formcolor
+    'seis': #161515, //black
+);
+
+.formulario {
+    font-size: 1.5rem;
+    background-color: rgba(255, 206, 245, 0.726);
+    color: map-get($map:$paleta, $key:'seis'); }
+
+.chapitaForm{ //extend
+    @extend .formulario;
+}
+
+.btn{
+    background: linear-gradient(to top, #a8308a, #5a1f3f);
+    border-color: transparent; 
+}
+
+.btn:hover{ //extend y map
+    @extend .btn;
+    cursor: pointer;
+    color: map-get($map:$paleta, $key:'uno');
+}
+
+@mixin texto($font-size, $background-color, $color){
+	font-size: $font-size;
+	background-color: $background-color;
+	color: $color;
+}
+
+h1{ //mixin y map
+	@include texto(5rem, map-get($map:$paleta, $key:'tres'), map-get($map:$paleta, $key:'seis'));
+	text-align:center;
+}
+
+.h1:hover{ //extend
+    @extend h1;
+    transform: scaleX(1.2);
+	cursor: pointer;
+	transition: 3s;
+}
+
+h2{ //mixin y map
+    @include texto(4rem, map-get($map:$paleta, $key:'cuatro'), map-get($map:$paleta, $key:'seis'))
+}
